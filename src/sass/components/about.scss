@@ -1,0 +1,42 @@
+@import '../mixins.scss';
+.about {
+  width: 75vw;
+  max-width: 45em;
+  background: #22222290;
+  border: 1px solid #ebebeb;
+  padding: 0.5em;
+  margin: auto;
+  @include flex(row, wrap, center, flex-start, 0.5em);
+  font-size: clamp(1em, 0.3em + 1.5vw, 1.5em);
+  &__div {
+    max-width: 25em;
+    font-size: 0.9em;
+  }
+  &__h2 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    margin: 0.5em 0;
+  }
+  &__ul {
+    @include flex(row, wrap, center, flex-start, 0.5em);
+  }
+  &__li {
+    line-height: 1.5em;
+  }
+  &__imgc {
+    align-self: center;
+    @include flex(row, nowrap, center, center, 0);
+  }
+  &__images {
+    width: 15em;
+    height: 25em;
+  }
+  &__img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

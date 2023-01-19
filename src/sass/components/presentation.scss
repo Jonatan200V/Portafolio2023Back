@@ -1,0 +1,12 @@
+@import '../variables.scss', '../mixins.scss';
+.presentation {
+  font-size: clamp(0.4em, 0.2em + 2.53vw, 2em);
+  text-align: center;
+  height: 100vh;
+  @include flex(column, nowrap, center, center, 0);
+  &__text {
+    color: $color-green;
+    font-size: 2em;
+    text-transform: uppercase;
+  }
+}

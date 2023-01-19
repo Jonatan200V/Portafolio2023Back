@@ -1,0 +1,5 @@
+@import '../mixins.scss';
+.pages {
+  flex-grow: 1;
+  @include flex(column, nowrap, center, center, 5em);
+}

@@ -1,0 +1,117 @@
+@import '../mixins.scss';
+.email {
+  @include modal();
+  &__flex {
+    background: rgb(8, 8, 8);
+    padding: 1em;
+    @include flex(column, nowrap, center, center, 1em);
+  }
+  &__top {
+    @include flex(column, nowrap, center, center, 0.5em);
+  }
+  &__close {
+    @include flex(column, nowrap, flex-end, flex-end, 0.5em);
+    width: 100%;
+    cursor: pointer;
+  }
+  &__close > svg {
+    fill: #fff;
+  }
+  &__h2 {
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  &__images {
+  }
+  &__img {
+  }
+  &__text {
+    @include flex(row, nowrap, center, center, 0.5em);
+    width: 14em;
+  }
+  &__p {
+    display: block;
+  }
+  &__back {
+    background: #9c9999;
+    width: 3em;
+    height: 2px;
+  }
+  &__left {
+    width: 3.4em;
+  }
+  &__center {
+  }
+  &__form {
+    @include flex(column, nowrap, center, center, 1em);
+  }
+  &__input {
+    width: 70vw;
+    max-width: 30em;
+    border: none;
+    outline: none;
+    height: 2.3em;
+    padding: 0 1em;
+    background: #111;
+    border: 1px solid #ebebeb;
+    border-radius: 0.5em;
+    color: #fff;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  &__textarea {
+    height: 8em;
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    padding: 1em;
+  }
+  &__btn {
+    width: 80%;
+    padding: 0.4em 0.5em;
+    border: none;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    background: #4ea2ca;
+    border-radius: 0.5em;
+    color: #ebebeb;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    &:hover > .email__btnabsolute {
+      transition: 0.5s ease;
+      width: 100%;
+    }
+  }
+  &__span {
+    position: relative;
+    z-index: 5;
+  }
+  &__btnabsolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #195779;
+    border-radius: 0.5em;
+    pointer-events: none;
+    transition: 0.5s ease;
+  }
+  &__message {
+    position: relative;
+    width: 80%;
+    height: 1.5em;
+  }
+  &__msg {
+    color: #58cf76;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    @include flex(row, nowrap, center, center, 0);
+  }
+  &__bottom {
+  }
+}

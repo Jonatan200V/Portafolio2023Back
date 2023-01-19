@@ -1,0 +1,23 @@
+@mixin flex($a, $b, $c, $d, $e) {
+  display: flex;
+  flex-flow: $a $b;
+  justify-content: $c;
+  gap: $e;
+  @if $b == 'nowrap' {
+    align-items: $d;
+  } @else {
+    align-content: $d;
+  }
+}
+
+@mixin modal() {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  @include flex(column, nowrap, center, center, 0);
+  backdrop-filter: blur(1em);
+  transition: 0.5s linear;
+  z-index: 200;
+}

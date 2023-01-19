@@ -1,0 +1,78 @@
+@import '../mixins.scss', '../variables.scss';
+.header {
+  &__relative {
+    position: relative;
+    width: 100vw;
+    max-width: 1250px;
+    height: 3.5em;
+    margin: auto;
+  }
+  background: #000;
+  @include flex(row, nowrap, space-between, center, 0);
+  border-bottom: 1px solid $color-white;
+  position: fixed;
+  width: 100vw;
+  max-width: 1250px;
+  margin: auto;
+  height: inherit;
+  &__div {
+    @include flex(column, nowrap, space-around, center, 0em);
+    cursor: pointer;
+    // width: 8em;
+    padding: 0 0.4em;
+  }
+  &__span {
+    color: green;
+    font-weight: bold;
+    font-size: clamp(1em, 0.4em + 2.56vw, 1.4em);
+    display: inline-block;
+    width: inherit;
+    text-align: left;
+  }
+  &__span:nth-child(2) {
+    color: $color-white;
+    display: inline-block;
+    width: inherit;
+    text-align: right;
+  }
+  &__ul {
+    @include flex(row, nowrap, space-around, center, 0em);
+    max-width: 30em;
+    font-size: clamp(0.6em, 0.3em + 2.56vw, 1.5em);
+    height: inherit;
+    padding: 0 1em;
+  }
+  &__li {
+    color: $color-white;
+    @include flex(row, nowrap, center, center, 0em);
+    transition: 0.5s ease;
+    padding: 0 0.2em;
+    height: inherit;
+
+    cursor: pointer;
+    &:hover > .header__absolute {
+      padding: 5em;
+    }
+    overflow: hidden;
+    position: relative;
+  }
+  &__li:nth-child(1) {
+    width: 5em;
+  }
+  &__absolute {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    transition: 0.5s linear;
+    background: $color-background;
+  }
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+  &__back {
+    padding: 5em;
+  }
+}
