@@ -9,4 +9,14 @@
     font-size: 2em;
     text-transform: uppercase;
   }
+  &__a {
+    display: flex;
+    width: 8em;
+    background: #1e6855;
+    padding: 0.4em;
+    border-radius: 0.2em;
+    margin: 1em auto;
+    justify-content: center;
+    gap: 0.5em;
+  }
 }

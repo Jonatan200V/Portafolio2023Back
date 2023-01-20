@@ -15,14 +15,14 @@
   max-width: 1250px;
   margin: auto;
   height: inherit;
+  z-index: 1000;
   &__div {
     @include flex(column, nowrap, space-around, center, 0em);
     cursor: pointer;
-    // width: 8em;
     padding: 0 0.4em;
   }
   &__span {
-    color: green;
+    color: $color-green;
     font-weight: bold;
     font-size: clamp(1em, 0.4em + 2.56vw, 1.4em);
     display: inline-block;
@@ -66,7 +66,7 @@
     pointer-events: none;
     border-radius: 50%;
     transition: 0.5s linear;
-    background: $color-background;
+    background: $color-green;
   }
   &__text {
     position: relative;

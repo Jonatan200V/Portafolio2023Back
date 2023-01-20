@@ -2,4 +2,13 @@
 .pages {
   flex-grow: 1;
   @include flex(column, nowrap, center, center, 5em);
+  &__about {
+    opacity: 0;
+    transform: translateX(25em);
+    transition: 1.5s ease-in-out;
+  }
+  &__visibility {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }

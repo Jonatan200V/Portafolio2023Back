@@ -5,7 +5,7 @@ import dota from '../../assets/proyects/dota.jfif';
 import poke from '../../assets/proyects/poke.jfif';
 import re from '../../assets/proyects/re2.jfif';
 import ygo from '../../assets/proyects/ygo.jfif';
-import pokemon from '../../assets/proyects/tspoke.jfif';
+import pokemon from '../../assets/proyects/tspoke.png';
 import ImageX from '../Image/Image';
 import { CardProyect } from '../../types';
 import {
@@ -99,7 +99,7 @@ const Proyects = () => {
         <h2 className='proyects__h2'>Proyectos</h2>
         <div className='proyects__images'>
           {Images.map((im) => (
-            <ImageX im={im} />
+            <ImageX im={im} key={im.id} />
           ))}
         </div>
       </div>

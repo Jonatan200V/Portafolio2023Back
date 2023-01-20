@@ -5,11 +5,11 @@
   display: flex;
   justify-content: center;
   align-content: center;
+  width: 10em;
   &__flex {
-    @include flex(row, nowrap, flex-start, flex-start, 0.5em);
+    @include flex(row, nowrap, center, flex-start, 1.5em);
     width: 90vw;
     max-width: 1250px;
-    // height: 100vh;
     margin: auto;
   }
   &__ul {

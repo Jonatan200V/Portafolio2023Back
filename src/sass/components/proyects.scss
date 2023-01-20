@@ -7,11 +7,17 @@
     @include modal();
     // display: block;
   }
-
   &__map {
     cursor: pointer;
     min-width: 19em;
     @include flex(row, wrap, center, center, 1em);
+    opacity: 0;
+    // transform: translateY(-2em);
+    transition: 1.5s ease-in-out;
+  }
+  &__visibility {
+    opacity: 1;
+    // transform: translateY(0);
   }
   &__h2 {
     text-align: center;

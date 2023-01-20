@@ -42,6 +42,7 @@ ul {
   max-width: 1250px;
   margin: auto;
   height: inherit;
+  z-index: 1000;
 }
 .header__relative {
   position: relative;
@@ -60,7 +61,7 @@ ul {
   padding: 0 0.4em;
 }
 .header__span {
-  color: green;
+  color: #1e6855;
   font-weight: bold;
   font-size: clamp(1em, 0.4em + 2.56vw, 1.4em);
   display: inline-block;
@@ -111,7 +112,7 @@ ul {
   pointer-events: none;
   border-radius: 50%;
   transition: 0.5s linear;
-  background: #337800;
+  background: #1e6855;
 }
 .header__text {
   position: relative;
@@ -127,12 +128,13 @@ ul {
   display: flex;
   justify-content: center;
   align-content: center;
+  width: 10em;
 }
 .icons__flex {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
-  gap: 0.5em;
+  justify-content: center;
+  gap: 1.5em;
   align-items: flex-start;
   width: 90vw;
   max-width: 1250px;
@@ -224,6 +226,15 @@ ul {
   gap: 5em;
   align-items: center;
 }
+.pages__about {
+  opacity: 0;
+  transform: translateX(25em);
+  transition: 1.5s ease-in-out;
+}
+.pages__visibility {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 .proyects__ocult {
   display: none;
@@ -251,6 +262,11 @@ ul {
   justify-content: center;
   gap: 1em;
   align-content: center;
+  opacity: 0;
+  transition: 1.5s ease-in-out;
+}
+.proyects__visibility {
+  opacity: 1;
 }
 .proyects__h2 {
   text-align: center;
@@ -283,9 +299,19 @@ ul {
   align-items: center;
 }
 .presentation__text {
-  color: #6aff00;
+  color: #1e6855;
   font-size: 2em;
   text-transform: uppercase;
+}
+.presentation__a {
+  display: flex;
+  width: 8em;
+  background: #1e6855;
+  padding: 0.4em;
+  border-radius: 0.2em;
+  margin: 1em auto;
+  justify-content: center;
+  gap: 0.5em;
 }
 
 .modal {
@@ -336,8 +362,8 @@ ul {
   align-content: flex-end;
 }
 .modal__img {
-  width: 20em;
-  height: 25em;
+  width: 14em;
+  height: 18em;
   border: 0.2em solid #000;
 }
 .modal__p {
@@ -404,6 +430,9 @@ ul {
   gap: 0.3em;
   align-content: center;
   border: 0.1em solid #ebebeb;
+  opacity: 0;
+  transition: 1.5s ease;
+  transform: translateX(-20em);
 }
 .tech__h2 {
   font-size: clamp(1em, 0.3em + 1.5vw, 1.5em);
@@ -419,6 +448,10 @@ ul {
 .tech__icon > svg {
   width: 100px;
   height: 100px;
+}
+.tech__visibility {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .email {
