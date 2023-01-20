@@ -228,7 +228,6 @@ ul {
 }
 .pages__about {
   opacity: 0;
-  transform: translateX(25em);
   transition: 1.5s ease-in-out;
 }
 .pages__visibility {
