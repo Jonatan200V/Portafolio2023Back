@@ -6,15 +6,15 @@ interface aboutus {
 const details: aboutus[] = [
   {
     id: 1,
-    info: 'Soy Estudiante de soy Henry y tambien autodidacta tengo mas de 1000 horas estudiando en el bootcamp mas las horas que tengo estudiando solo.',
+    info: 'Soy Estudiante de soy Henry y tambien autodidacta, tengo mas de 1000 horas estudiando en el bootcamp, mas las horas que tengo estudiando solo.',
   },
   {
     id: 2,
-    info: 'Eh realizado proyectos con tecnologias como React.Js, Next.Js, GraphQl,Node.Js, Express.Js, Sequelize y PostgresSQL Scss.',
+    info: 'Realize proyectos con tecnologias como React.Js, Next.Js, GraphQl,Node.Js, Express.Js, Sequelize y PostgresSQL Scss.',
   },
   {
     id: 3,
-    info: 'Cada dia me encuentro aprendiendo mas y mas me encanta programar es un hobbi que puedo hacer un trabajo eso quiere decir que disfruto cada cosa que tenga que ver con codigos y algoritmos.',
+    info: 'Cada dia me encuentro aprendiendo mas y mas, me encanta programar es un hobbi que puedo hacer un trabajo, eso quiere decir que disfruto cada cosa que tenga que ver con codigos y algoritmos.',
   },
   {
     id: 4,
