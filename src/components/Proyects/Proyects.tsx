@@ -113,6 +113,24 @@ const Images: CardProyect[] = [
       postgres,
     ],
   },
+  {
+    id: 9,
+    source: './todo.png',
+    description:
+      'Es una lista de tareas que implementa los eventos Drag and Drop realizada con React.js y Css puro.',
+    directGit: 'https://github.com/Jonatan200V/TodoAppDragAndDrop',
+    direction: 'https://todo-app-drag-and-drop.vercel.app',
+    icons: [react, css],
+  },
+  {
+    id: 10,
+    source: './tech.png',
+    description:
+      'Un ecommerce en donde se puede pagar mendiante Stripe, filtrar los productos, con algoritmos que dicen productos en oferta y mas vistos, creacion de Pc, login, pagina de admin y detalles de cada producto pudiendo añadir a favoritos y agregar un comentario.',
+    directGit: 'https://github.com/HenryTechGroup2/HenryTech_Frontend',
+    direction: 'https://henry-tech-app.vercel.app',
+    icons: [react, sass, redux, node, express, sequelize, postgres],
+  },
 ];
 
 const Proyects = () => {

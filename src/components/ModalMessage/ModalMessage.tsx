@@ -37,10 +37,12 @@ const ModalMessage = ({ openModalMessage }: ModalMessageProps) => {
   function closeModal() {
     openModalMessage();
   }
+  const api: string = 'https://backprot-production.up.railway.app';
+  // const api:string = 'http://localhost:5000'
   async function sendEmail(evt: React.FormEvent<HTMLFormElement>) {
     evt.preventDefault();
     try {
-      const data = await fetch('http://localhost:5000/api/mail', {
+      const data = await fetch(`${api}/api/mail`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

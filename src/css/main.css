@@ -285,6 +285,8 @@ ul {
 .proyects__img {
   height: 25em;
   width: 17em;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .presentation {
